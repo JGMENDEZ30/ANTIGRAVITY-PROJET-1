@@ -1,0 +1,8 @@
+{
+  "name": "Historia del Idioma Ruso",
+  "description": "Explorador interactivo del desarrollo histórico, filológico y gramatical de la lengua rusa desde sus raíces proto-eslavas hasta su forma moderna.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

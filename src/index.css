@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: #fff8f4; /* Warm Linen */
+  color: #201b14; /* Warm Charcoal */
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+  min-height: 100vh;
+}
+
+.soft-card-shadow {
+  box-shadow: 0 4px 16px rgba(12, 82, 82, 0.08);
+}
+
+.pillowy-shadow {
+  box-shadow: 0 4px 16px rgba(12, 82, 82, 0.12);
+}
+
+.pulse-ring {
+  animation: pulse-ring-anim 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+@keyframes pulse-ring-anim {
+  0% {
+    transform: scale(0.96);
+    box-shadow: 0 0 0 0 rgba(12, 82, 82, 0.35);
+  }
+  70% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 24px rgba(12, 82, 82, 0);
+  }
+  100% {
+    transform: scale(0.96);
+    box-shadow: 0 0 0 0 rgba(12, 82, 82, 0);
+  }
+}
+
+/* Custom transitions and scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #bfc8c8;
+  border-radius: 10px;
+}
